@@ -1,81 +1,76 @@
-# Monopoly Quests
+# Quests
 
-This is your path to building a full working Monopoly game in Python, from an empty folder to a finished, playable game. It's split into small quests — each one is a single sitting, each one leaves you with something that actually runs.
+One quest = one lesson, about an hour. Do them in order. Every quest ends with the game still working.
 
-The full technical rules reference lives in [`../PLAN.md`](../PLAN.md). You don't need to read it to start — check it later if you ever want the exact detail behind a rule (like the precise railroad rent formula, or what counts as a legal trade).
+## How a quest works
 
-## How to use this
+| Part | What it means |
+|---|---|
+| **Goal** | what you'll have at the end |
+| **Idea** | the new Python thing you'll learn (not every quest has one) |
+| **Do it** | the steps. Code marked `# TODO` is yours to write. |
+| **Check it** | how to know it worked |
+| **Save** | commit your work (see below) |
 
-- Do the quests **in order**. Later ones assume the classes and functions from earlier ones already exist, under the same names.
-- Read the whole quest before writing code. Each one tells you *why* you're doing it, not just *what* to type.
-- Get the "Test it yourself" section passing before moving on. If something's broken, the next quest will be harder to debug, not easier.
-- **Commit to git after every quest**, using the suggested commit message. This means if you break something three quests from now, you can always look back at — or go back to — a version that worked. Small commits make mistakes easy to find and undo.
-- It's completely normal for code to not work on the first try. An error message is a clue, not a failure. Read the last line of the error first.
-- Some quests have a "New idea(s)" section introducing a concept you haven't used yet, with a tiny unrelated example. Read that part slowly — it'll come up again and again after this.
+**Saving your work:** open Source Control (`Ctrl+Shift+G`), type the message the quest gives you, click **Commit**. Then if you break something later, you can always get back to a version that worked.
 
-## Quest checklist
+**Stuck?** Read the *last* line of the error first. It usually names the file and line number.
 
-### Chapter 0: Get your tools ready
-- [ ] [00. Get your tools ready](00_setup.md)
+## Progress
 
-### Chapter 1: Warm-up practice
-- [ ] [01. Move around a board (practice)](01_practice_moving_board.md)
-- [ ] [02. Draw and click a button (practice)](02_practice_button_click.md)
-- [ ] [03. Create two player objects (practice)](03_practice_player_objects.md)
+Tick a quest when you finish it: change `[ ]` to `[x]`.
 
-### Chapter 2: A real window
-- [ ] [04. Open a real game window](04_real_window.md)
-- [ ] [05. Build a reusable Button class](05_reusable_button.md)
-- [ ] [06. Menu and screen switching](06_screen_switching.md)
+**1 · Getting started**
+- [ ] [01 · Fix your first window](1-getting-started/01-fix-your-first-window.md)
+- [ ] [02 · Many files, one game](1-getting-started/02-many-files-one-game.md)
 
-### Chapter 3: Game objects
-- [ ] [07. A real Player class](07_player_class.md)
-- [ ] [08. A Space class for the whole board](08_space_and_property_classes.md)
-- [ ] [09. The GameState class](09_gamestate_class.md)
+**2 · Looking good**
+- [ ] [03 · Colours and a logo](2-looking-good/03-colours-and-a-logo.md)
+- [ ] [04 · A button class](2-looking-good/04-a-button-class.md)
+- [ ] [05 · Screens](2-looking-good/05-screens.md)
 
-### Chapter 4: The board
-- [ ] [10. Describe the board in JSON](10_board_data_json.md)
-- [ ] [11. Load and check the board data](11_load_and_validate_board.md)
-- [ ] [12. Turn a space index into screen coordinates](12_board_math.md)
-- [ ] [13. Draw the actual board](13_draw_the_board.md)
+**3 · The board**
+- [ ] [06 · Players and spaces](3-the-board/06-players-and-spaces.md)
+- [ ] [07 · The board as data](3-the-board/07-the-board-as-data.md)
+- [ ] [08 · Board maths](3-the-board/08-board-maths.md)
+- [ ] [09 · Paint the board](3-the-board/09-paint-the-board.md)
 
-### Chapter 5: Playing a turn
-- [ ] [14. Player setup screen](14_player_setup_screen.md)
-- [ ] [15. Decide turn order](15_turn_order.md)
-- [ ] [16. A Roll Dice button that actually rolls](16_roll_dice_button.md)
-- [ ] [17. Move the token and pass Go](17_movement_and_passing_go.md)
-- [ ] [18. Doubles give another turn (mostly)](18_doubles_and_jail_streak.md)
-- [ ] [19. End Turn and advance to the next player](19_ending_a_turn.md)
+**4 · Taking turns**
+- [ ] [10 · Who's playing?](4-taking-turns/10-whos-playing.md)
+- [ ] [11 · Roll and move](4-taking-turns/11-roll-and-move.md)
+- [ ] [12 · The sidebar](4-taking-turns/12-the-sidebar.md)
+- [ ] [13 · Doubles and jail](4-taking-turns/13-doubles-and-jail.md)
 
-### Chapter 6: Landing on spaces
-- [ ] [20. One function for all money movement](20_pay_and_transfer_money.md)
-- [ ] [21. React to every space type](21_landing_on_spaces.md)
-- [ ] [22. Buy or decline a property](22_buying_property.md)
+**5 · Property**
+- [ ] [14 · Buying](5-property/14-buying.md)
+- [ ] [15 · Title deeds](5-property/15-title-deeds.md)
+- [ ] [16 · Rent](5-property/16-rent.md)
+- [ ] [17 · Auctions](5-property/17-auctions.md)
 
-### Chapter 7: Rent and auctions
-- [ ] [23. Auction a declined property](23_auctions.md)
-- [ ] [24. Real rent — streets, railroads, utilities](24_rent_calculations.md)
+**6 · Cards**
+- [ ] [18 · Card decks](6-cards/18-card-decks.md)
+- [ ] [19 · Cards that move you](6-cards/19-cards-that-move-you.md)
 
-### Chapter 8: Jail
-- [ ] [25. All three ways into jail](25_entering_jail.md)
-- [ ] [26. Getting out of jail](26_jail_turn_choices.md)
+**7 · Building an empire**
+- [ ] [20 · Mortgages](7-empire/20-mortgages.md)
+- [ ] [21 · Houses and hotels](7-empire/21-houses-and-hotels.md)
+- [ ] [22 · Debt](7-empire/22-debt.md)
+- [ ] [23 · Bankruptcy and winning](7-empire/23-bankruptcy-and-winning.md)
 
-### Chapter 9: Cards
-- [ ] [27. Shuffled Chance and Community Chest decks](27_card_decks.md)
-- [ ] [28. Make every card actually do something](28_card_actions.md)
+**8 · Finishing touches**
+- [ ] [24 · Trading rules](8-finishing-touches/24-trading-rules.md)
+- [ ] [25 · The trade screen](8-finishing-touches/25-trade-screen.md)
+- [ ] [26 · Save and load](8-finishing-touches/26-save-and-load.md)
+- [ ] [27 · Juice](8-finishing-touches/27-juice.md)
+- [ ] [28 · Make it yours](8-finishing-touches/28-make-it-yours.md)
 
-### Chapter 10: Buildings and mortgages
-- [ ] [29. An asset manager screen](29_asset_manager_screen.md)
-- [ ] [30. Houses, hotels, and even building](30_building_rules.md)
-- [ ] [31. Mortgage and unmortgage](31_mortgages.md)
+## Commands
 
-### Chapter 11: Trading and bankruptcy
-- [ ] [32. Trading between players](32_trading.md)
-- [ ] [33. Owing more than you have](33_debt_and_raising_funds.md)
-- [ ] [34. Bankruptcy and finding a winner](34_bankruptcy_and_winning.md)
+| To... | Type this in the terminal |
+|---|---|
+| play | `python main.py` |
+| run all the tests | `python -m pytest` |
+| run one test file | `python -m pytest tests/test_rent.py` |
+| stop a stuck program | `Ctrl+C` in the terminal |
 
-### Chapter 12: Save/load and polish
-- [ ] [35. Save and load a game](35_save_and_load.md)
-- [ ] [36. Make it pleasant to actually play](36_polish_and_juice.md)
-
-That's it — 37 quests, each one a real step toward a real game. Start with [00](00_setup.md).
+Keep the explorer tidy: click the **Collapse Folders** button at the top of the explorer whenever it gets long.

@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        ".venv": true
+    },
+    "workbench.editorAssociations": {
+        "**/quests/*/*.md": "vscode.markdown.preview.editor"
+    },
+    "explorer.compactFolders": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": ["tests"]
+}
